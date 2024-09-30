@@ -211,6 +211,24 @@ measurements are running in the background.
 - Any text preceded by a `#` in the bash shell will not be executed, so add some information
 what the above line is doing.
 
+### Step 4: Time on a raspberry pi
+
+Time on a normal computer is (even when the actual battery is empty) is ticking forward
+with a small internal battery so that the computer knows what time has passed next time
+you switch it on even if you ran out of battery. A raspberry pi does not have that
+battery and you have three ways to set the time
+
+- You can set the time manually in the command line with `sudo date -s '2021-01-04 13:04:00'`
+but notice that it will stop again if switch off the power.
+- You can connect the raspberry pi to the internet and it will set the time automatically
+if `sudo timedatectl set-ntp true` (or disable with `false`). For this you can rename
+the hotspot of your phone to `pi_wifi` and set the password to `raspberry`. If you
+have placed your weather station you can then power the pi, check that it connects
+to that wifi and use your laptop as inside to check that it's on and what time is
+has set.
+- Ignore the wrong time and just note to exact time to the minute when you power the raspberry pi
+outside. You can then correct the time afterwards.
+
 ## Part 3: Assembly
 
 You should now have a fully programmed pi, and a fully wired sensor network. All
@@ -224,7 +242,8 @@ they will need to be deployed in a separate Tupperware box. Once the power cable
 is in place, put a ring of blutac around it to create a watertight seal.
 
 Now go out into the world and place your station.
-Make sure that you power on your power bank before leaving!
+Make sure that you power on your power bank before leaving your pi alone!
+And note the time if that is your strategy for [Step 4: Time on a raspberry pi](@ref).
 
 # Credits
 
