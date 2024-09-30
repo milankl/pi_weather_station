@@ -243,7 +243,8 @@ is in place, put a ring of blutac around it to create a watertight seal.
 
 Now go out into the world and place your station.
 Make sure that you power on your power bank before leaving your pi alone!
-And note the time if that is your strategy for [Step 4: Time on a raspberry pi](@ref).
+And note the time if that is your strategy for
+[Step 4: Time on a raspberry pi](https://github.com/milankl/pi_weather_station/blob/master/README.md#step-4-time-on-a-raspberry-pi).
 
 # Credits
 
